@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+body {
+    font-family: "Rubik Glitch", cursive;
+    background-color: #0a0819;
+}
+.header {
+    background-image: url(img/bg.jpg);
+    height: 722px;
+    background-size: cover;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    position: relative;
+}
+.header::before {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-image: linear-gradient(to top, #0a0819, transparent);
+}
+.header .logo-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 90px;
+    /* border: 1px solid rgb(255, 0, 0); */
+    margin: 0px auto;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+.header .logo-menu img {
+    width: 12%;
+    margin-top: 20px;
+}
+.header .logo-menu .menu ul {
+    display: flex;
+    list-style: none;
+    text-shadow: 0 0 20px #000;
+    margin-top: 20px;
+}
+.header .logo-menu .menu ul li a {
+    text-decoration: none;
+    margin-left: 50px;
+    color: white;
+}
+.header .text h1 {
+    font-family: "Rubik Glitch", cursive;
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.container .text-1 {
+    color: white;
+    width: 35%;
+    height: 200px;
+    text-align: center;
+    margin: 70px auto;
+    font-family: "Lobster", cursive;
+    /* border: 1px solid white; */
+}
+
+.container .text-1 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container .text-1 p {
+    font-size: 15px;
+    color: gray;
+}
+.container .text-3 {
+    color: white;
+    width: 35%;
+    height: 250px;
+    text-align: center;
+    margin: 70px auto;
+    padding-top: 70px;
+    font-family: "Lobster", cursive;
+    /* border: 1px solid white; */
+}
+.container .text-3 h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container .text-3 p {
+    font-size: 15px;
+    color: gray;
+}
+.container .list {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    width: 80%;
+    height: 200px;
+    /* border: 1px solid white; */
+    margin: 0px auto;
+    align-items: center;
+}
+.container .list .icon i {
+    font-size: 60px;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+.container .list .icon p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.container .list .icon i:hover {
+    transform: scale(1.2);
+}
+.container .checkin {
+    width: 90%;
+    height: 500px;
+    /* border: 1px solid white; */
+    color: rgb(244, 244, 244);
+    font-size: 12px;
+    transition: 0.5s;
+    margin: 0px auto;
+}
+.container .checkin .item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container .checkin .col {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.container .checkin .title h4 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.container .checkin .item img {
+    transition: 0.5s;
+}
+.container .checkin .item .title {
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    bottom: -150px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.707);
+}
+.container .item:hover .title {
+    bottom: 0;
+}
+.container .checkin .item:hover img {
+    transform: scale(1.2);
+}
+.fare {
+    width: 30%;
+    height: 700px;
+    /* border: 1px solid white; */
+    position: relative;
+    overflow: hidden;
+    margin-right: 50px;
+    margin: 0 auto;
+    /* border: 1px solid white; */
+    border-radius: 20px;
+}
+.fare img {
+    height: 100%;
+}
+.fare .ticket {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.795);
+    width: 50%;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.625) 0px 5px 15px;
+    border-left: 5px solid rgba(30, 0, 121, 0.74);
+    font-size: 18px;
+    transition: 0.5s;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+.fare .ticket span {
+    color: red;
+    font-weight: bold;
+    font-size: 19px;
+}
+.fare:hover .ticket {
+    bottom: -60px;
+}
+.fare .describe {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.455);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: -100%;
+    transition: 0.5s;
+}
+.fare:hover .describe {
+    left: 0;
+}
+.fare .describe .text-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.fare .describe .text-2 h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: orangered;
+}
+.box {
+    display: flex;
+}
+.footer {
+    width: 100%;
+    /* border: 1px solid white; */
+    margin-top: 70px;
+    font-family: "Poppins", sans-serif;
+    background-color: #000;
+    color: white;
+    padding-bottom: 40px;
+}
+.footer .img {
+    width: 45%;
+    /* border: 1px solid rgb(255, 0, 0); */
+    margin-top: 40px;
+}
+.footer .footer-1 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.footer .content {
+    width: 35%;
+    /* border: 1px solid rgb(0, 255, 76); */
+}
+.footer .list-1 {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid rgb(0, 4, 255); */
+    width: 80%;
+}
+.footer .contact p {
+    margin-top: 25px;
+    color: gray;
+    transition: 0.5s;
+}
+.footer .contact p i {
+    padding-right: 10px;
+    font-size: 20px;
+    color: white;
+}
+.footer .contact p:hover {
+    color: greenyellow;
+}
+.footer .icon {
+    margin-top: 25px;
+    font-size: 25px;
+}
+.footer .icon i {
+    padding-right: 20px;
+    transition: 0.5s;
+}
+.footer .icon i:hover {
+    font-size: 30px;
+    color: orangered;
+}
+.footer .list-1 {
+    margin-top: 95px;
+}
+.footer .text-4 ul {
+    list-style: none;
+}
+.footer .text-4 h3 {
+    margin-bottom: 60px;
+}
+.footer .text-4 ul li {
+    margin-bottom: 30px;
+    color: gray;
+    transition: 0.5s;
+}
+.footer hr {
+    width: 95%;
+    margin: 50px auto;
+    border: 0.1px solid rgb(78, 78, 78);
+}
+.footer .text-5 {
+    text-align: center;
+    margin-top: -20px;
+}
+.footer .text-5 p span {
+    color: rgb(0, 174, 255);
+}
+.footer .text-4 ul li:hover {
+    color: white;
+}
